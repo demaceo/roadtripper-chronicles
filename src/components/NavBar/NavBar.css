@@ -1,0 +1,25 @@
+.navbar-transparent {
+  background-color: transparent !important;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+.btn-round {
+  border-radius: 25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-open {
+  background-color: rgba(0, 0, 0, 0.8);
+}
