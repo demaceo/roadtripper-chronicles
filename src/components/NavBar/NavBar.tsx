@@ -20,6 +20,7 @@ declare global {
 
 const NavBar: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [carStopped, setCarStopped] = useState(false);
 
   const toggleNavbar = () => {
     setIsNavOpen(!isNavOpen);
@@ -33,6 +34,14 @@ const NavBar: React.FC = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setCarStopped(true);
+    }, 3000); // Matches animation duration in CSS
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Navbar
       expand="md"
@@ -40,11 +49,21 @@ const NavBar: React.FC = () => {
       className={`navbar-transparent ${isNavOpen ? "nav-open" : ""}`}
     >
       <Container className="nav-links-container">
+        <div className={`car ${carStopped ? "car-stopped" : ""}`}>
+          <img
+            src={`${
+              carStopped
+                ? "https://i.ibb.co/9brYSZv/3.png"
+                : "https://i.ibb.co/XtcwJ1H/4.png"
+            }`}
+            alt="Car"
+          />
+        </div>
         <Navbar.Brand
           className="navbar-logo"
           href="http://www.roadtripperchronicles.com"
         >
-          LOGO
+          {/* LOGO */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarToggler" onClick={toggleNavbar}>
           <span className="navbar-toggler-bar"></span>
@@ -99,8 +118,7 @@ const NavBar: React.FC = () => {
               href="http://www.roadtripperchronicles.com"
               target="_blank"
             >
-              <FontAwesomeIcon id="spotify-icon" icon={faSpotify} />
-              <p className="hidden-lg-up">Spotify</p>
+              
             </Button> */}
           </Nav>
         </Navbar.Collapse>

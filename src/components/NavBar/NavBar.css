@@ -32,6 +32,30 @@
   text-transform: uppercase;
 }
 
+.car {
+  position: absolute;
+  top: 10px;
+  width: 100px;
+  height: auto;
+  transform: translateX(-100vw); /* Start far left */
+  animation: drive-in 3s ease-out forwards;
+}
+
+@keyframes drive-in {
+  from {
+    transform: translateX(-100vw); /* Start far left */
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* Ensures the car stays at the left after animation */
+.car-stopped {
+  animation: none;
+  transform: translateX(0) !important;
+  /* background-image: image('https://i.ibb.co/9brYSZv/3.png'); */
+}
+
 .btn-round {
   background-color: #ffcc002d;
   outline: none;
