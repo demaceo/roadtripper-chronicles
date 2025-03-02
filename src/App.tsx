@@ -1,57 +1,47 @@
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { Howl } from "howler";
-import rvImage from "./assets/rv.png";
-import smokeImage from "./assets/smoke.png";
-// import spotifyImage from "./assets/spotify.png";
-import spotifyImage from "./assets/Spotify.svg";
-import tireScreech from "./assets/tire_screech.mp3";
 import "./App.css";
+import { HashRouter, useRoutes } from "react-router-dom";
+import Hero from "./components/Hero/Hero.tsx";
+import NavBar from "./components/NavBar/NavBar.tsx";
+import About from "./components/About/About.tsx";
+import Footer from "./components/Footer/Footer.tsx";
 
 const App: React.FC = () => {
-  const rvRef = useRef<HTMLImageElement>(null);
-  const smokeRef = useRef<HTMLImageElement>(null);
-  const spotifyRef = useRef<HTMLAnchorElement>(null);
-
-  useEffect(() => {
-    const sound = new Howl({ src: [tireScreech], volume: 0.8 });
-
-    gsap.to(rvRef.current, {
-      x: window.innerWidth + 200,
-      duration: 2.5,
-      ease: "power2.out",
-      onStart: () => sound.play(),
-      onComplete: () => {
-        gsap.to(smokeRef.current, {
-          opacity: 1,
-          duration: 0.5,
-          onComplete: () => {
-            gsap.to(smokeRef.current, { opacity: 0, duration: 1, delay: 0.5 });
-            gsap.to(spotifyRef.current, {
-              opacity: 1,
-              duration: 1,
-              delay: 0.5,
-            });
-          },
-        });
+  const Routes = () => {
+    const routes = useRoutes([
+      {
+        path: "/",
+        element: (
+          <>
+            <NavBar />
+            <Hero
+              title="ROADTRIPPER CHRONICLES"
+              subtitle="The Podcast"
+              backgroundImage="http://demos.creative-tim.com/paper-kit-2/assets/img/antoine-barres.jpg"
+              cloudImage="http://demos.creative-tim.com/paper-kit-2/assets/img/clouds.png"
+              fogImage="http://demos.creative-tim.com/paper-kit-2/assets/img/fog-low.png"
+            />{" "}
+            {/* <Footer /> */}
+          </>
+        ),
       },
-    });
-  }, []);
+      {
+        path: "/about",
+        element: (
+          <>
+            <NavBar />
+            <About />
+            <Footer />
+          </>
+        ),
+      },
+    ]);
+    return routes;
+  };
 
   return (
-    <div className="animation-container">
-      <img ref={rvRef} id="rv" src={rvImage} alt="Green RV" />
-      <img ref={smokeRef} id="smoke" src={smokeImage} alt="Smoke Cloud" />
-      <a
-        ref={spotifyRef}
-        id="spotify-link"
-        href="https://open.spotify.com/show/YOUR_SPOTIFY_LINK"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={spotifyImage} alt="Spotify Logo" />
-      </a>
-    </div>
+    <HashRouter>
+      <Routes />
+    </HashRouter>
   );
 };
 

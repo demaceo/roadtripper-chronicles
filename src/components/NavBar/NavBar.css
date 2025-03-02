@@ -1,23 +1,55 @@
 .navbar-transparent {
   background-color: transparent !important;
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  text-align: center;
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
   margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  font-size: 1.5em;
+  transition: all 0.2s ease;
 }
 
 .navbar-nav .nav-link:hover {
   color: #ffcc00 !important;
 }
 
+.navbar-logo {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 5px 0px;
+  padding: 20px 15px;
+  color: #fdfbf9b0;
+  text-transform: uppercase;
+}
+
 .btn-round {
+  background-color: #ffcc002d;
+  outline: none;
+  border: none;
+  color: #ffcc00;
+  padding: 0.5em;
   border-radius: 25px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   text-align: center;
+}
+
+#spotify-icon {
+  color: #137c15;
+  font-size: 2em;
+  opacity: 1;
 }
 
 .nav-open {

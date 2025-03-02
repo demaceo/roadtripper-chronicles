@@ -29,3 +29,17 @@ body {
   min-width: 320px;
   min-height: 100vh; 
 } */
+
+:root {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color-scheme: light dark;
+  /* color: #0b1011; */
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}

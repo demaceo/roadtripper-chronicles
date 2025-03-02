@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect } from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSpotify,
@@ -39,8 +39,13 @@ const NavBar: React.FC = () => {
       fixed="top"
       className={`navbar-transparent ${isNavOpen ? "nav-open" : ""}`}
     >
-      <Container>
-        <Navbar.Brand href="https://www.example.com">LOGO</Navbar.Brand>
+      <Container className="nav-links-container">
+        <Navbar.Brand
+          className="navbar-logo"
+          href="www.roadtripperchronicles.com"
+        >
+          LOGO
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarToggler" onClick={toggleNavbar}>
           <span className="navbar-toggler-bar"></span>
           <span className="navbar-toggler-bar"></span>
@@ -50,23 +55,13 @@ const NavBar: React.FC = () => {
         <Navbar.Collapse id="navbarToggler">
           <Nav className="ms-auto">
             <Nav.Link
-              href="https://open.spotify.com/user/31s4sb53ykk5hutlenwk3myfjdgy"
-              target="_blank"
-              title="Listen to us on Spotify"
-              data-bs-toggle="tooltip"
-            >
-              <FontAwesomeIcon icon={faSpotify} />
-              <p className="hidden-lg-up">Spotify</p>
-            </Nav.Link>
-
-            <Nav.Link
               href="https://www.linkedin.com/groups/13117416/"
               target="_blank"
               title="Connect with us on LinkedIn"
               data-bs-toggle="tooltip"
             >
               <FontAwesomeIcon icon={faLinkedin} />
-              <p className="hidden-lg-up">LinkedIn</p>
+              {/* <p className="hidden-lg-up">LinkedIn</p> */}
             </Nav.Link>
 
             <Nav.Link
@@ -76,27 +71,37 @@ const NavBar: React.FC = () => {
               data-bs-toggle="tooltip"
             >
               <FontAwesomeIcon icon={faInstagram} />
-              <p className="hidden-lg-up">Instagram</p>
+              {/* <p className="hidden-lg-up">Instagram</p> */}
             </Nav.Link>
 
             <Nav.Link
               href="https://www.tiktok.com/@roadtripperchronicles?lang=en"
               target="_blank"
-              title="Add us on TikTok"
+              title="Follow us on TikTok"
               data-bs-toggle="tooltip"
             >
               <FontAwesomeIcon icon={faTiktok} />
-              <p className="hidden-lg-up">TikTok</p>
+              {/* <p className="hidden-lg-up">TikTok</p> */}
+            </Nav.Link>
+            <Nav.Link
+              href="https://open.spotify.com/user/31s4sb53ykk5hutlenwk3myfjdgy"
+              target="_blank"
+              title="Listen to us on Spotify"
+              data-bs-toggle="tooltip"
+            >
+              <FontAwesomeIcon id="spotify-icon" icon={faSpotify} />
+              {/* <p className="hidden-lg-up">Spotify</p> */}
             </Nav.Link>
 
-            <Button
+            {/* <Button
               variant="danger"
               className="btn-round"
               href="http://www.roadtripperchronicles.com"
               target="_blank"
             >
-              Login
-            </Button>
+              <FontAwesomeIcon id="spotify-icon" icon={faSpotify} />
+              <p className="hidden-lg-up">Spotify</p>
+            </Button> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
