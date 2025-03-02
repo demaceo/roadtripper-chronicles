@@ -42,7 +42,7 @@ const NavBar: React.FC = () => {
       <Container className="nav-links-container">
         <Navbar.Brand
           className="navbar-logo"
-          href="www.roadtripperchronicles.com"
+          href="http://www.roadtripperchronicles.com"
         >
           LOGO
         </Navbar.Brand>

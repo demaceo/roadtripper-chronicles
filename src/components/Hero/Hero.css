@@ -48,21 +48,25 @@
   font-size: 8em;
   font-weight: 700;
   margin: 0;
+  letter-spacing: 5px;
   color: #ffffff;
   background: #fbf8ec;
   background: -moz-linear-gradient(top, #ffffff 35%, #4e6773 100%);
   background: -webkit-linear-gradient(top, #ffffff 35%, #4e6773 100%);
-  background: linear-gradient(to bottom, #ffffff 35%, #4e6773 100%);
+  background: linear-gradient(to bottom, #ffffffa7 35%, #4e6773 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 
 .presentation-subtitle {
   margin-top: 40px;
-  font-size: 1.7em;
+  font-size: 1.6em;
+  letter-spacing: 2px;
   color: #ffffff;
   font-weight: 200;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .fog-low {
@@ -71,7 +75,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 110%;
-  opacity: 0.35;
+  opacity: 0.25;
 }
 
 .fog-low.right {
