@@ -37,7 +37,7 @@ const NavBar: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setCarStopped(true);
-    }, 3000); // Matches animation duration in CSS
+    }, 4000); // Matches animation duration in CSS
 
     return () => clearTimeout(timer);
   }, []);
@@ -49,21 +49,22 @@ const NavBar: React.FC = () => {
       className={`navbar-transparent ${isNavOpen ? "nav-open" : ""}`}
     >
       <Container className="nav-links-container">
-        <div className={`car ${carStopped ? "car-stopped" : ""}`}>
-          <img
-            src={`${
-              carStopped
-                ? "https://i.ibb.co/9brYSZv/3.png"
-                : "https://i.ibb.co/XtcwJ1H/4.png"
-            }`}
-            alt="Car"
-          />
-        </div>
         <Navbar.Brand
           className="navbar-logo"
           href="http://www.roadtripperchronicles.com"
         >
           {/* LOGO */}
+          <div className={`car ${carStopped ? "car-stopped" : ""}`}>
+            <img
+              className="rv-img"
+              src={`${
+                carStopped
+                  ? "https://i.ibb.co/9brYSZv/3.png"
+                  : "https://i.ibb.co/XtcwJ1H/4.png"
+              }`}
+              alt="logo"
+            />
+          </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarToggler" onClick={toggleNavbar}>
           <span className="navbar-toggler-bar"></span>
