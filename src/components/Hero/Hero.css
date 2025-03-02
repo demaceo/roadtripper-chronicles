@@ -1,10 +1,10 @@
-.wrapper {
+.hero-wrapper {
   position: relative;
   width: 100%;
   height: 100vh;
 }
 
-.page-header {
+.hero-background {
   text-align: center;
   background-color: #abacb2;
   background-position: center center;
@@ -24,7 +24,7 @@
   color: #0b1011;
 }
 
-.filter {
+.overlay-filter {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@
   text-align: center;
 }
 
-.presentation-title {
+.hero-title {
   font-size: 5em;
   font-weight: bold;
   font-size: 8em;
@@ -57,28 +57,29 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  /* text-shadow: 29px 29px 49px rgba(95, 241, 97, 0.215); */
 }
 
-.presentation-subtitle {
+.hero-subtitle {
   margin-top: 40px;
   font-size: 1.6em;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: #ffffff97;
   font-weight: 200;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 29px 29px 49px rgb(241, 95, 95); */
 }
 
 .fog-low {
   position: absolute;
   bottom: -50px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50vw) scale(1.5);
   width: 110%;
   opacity: 0.25;
+  /* animation: fogfloat 10s linear infinite; */
 }
 
-.fog-low.right {
+.right {
   right: 50px;
 }
 
@@ -98,4 +99,13 @@
   100% {
     background-position: 100% 0;
   }
+}
+
+@keyframes fogfloat {
+  from {
+    transform: translateX(100vw); /* Start far right */
+  }
+  to {
+    transform: translateX(-100vw); /* End far left */
+}
 }
