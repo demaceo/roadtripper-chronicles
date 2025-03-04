@@ -113,7 +113,7 @@ const NavBar: React.FC = () => {
               {/* <p className="hidden-lg-up">TikTok</p> */}
             </Nav.Link>
             <Nav.Link
-              href="https://open.spotify.com/user/31s4sb53ykk5hutlenwk3myfjdgy"
+              href="https://open.spotify.com/show/53JJiTRGinHdvf48OVeN5b?si=Di1XLA-HTmyNIHJAleCS3w"
               target="_blank"
               title="Listen to us on Spotify"
               data-bs-toggle="tooltip"
