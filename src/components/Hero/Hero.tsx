@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hero.css"; 
+import "./Hero.css";
 
 interface HeroProps {
   title: string;
@@ -34,8 +34,9 @@ const Hero: React.FC<HeroProps> = ({
                 <img src={fogImage} alt="Fog" />
               </div>
             </div>
-
-            <h2 className="hero-subtitle">{subtitle}</h2>
+            <h2 className="hero-subtitle">
+              {subtitle} <br></br>hello@roadtripperchronicles.com
+            </h2>
           </div>
         </div>
         <div

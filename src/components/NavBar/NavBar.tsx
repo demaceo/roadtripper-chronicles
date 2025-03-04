@@ -7,6 +7,7 @@ import {
   faLinkedin,
   faInstagram,
   faTiktok,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -101,6 +102,15 @@ const NavBar: React.FC = () => {
               data-bs-toggle="tooltip"
             >
               <FontAwesomeIcon icon={faTiktok} />
+              {/* <p className="hidden-lg-up">TikTok</p> */}
+            </Nav.Link>
+            <Nav.Link
+              href="https://www.youtube.com/@roadtripperchronicles"
+              target="_blank"
+              title="Subcribe to our Youtube Channel"
+              data-bs-toggle="tooltip"
+            >
+              <FontAwesomeIcon icon={faYoutube} />
               {/* <p className="hidden-lg-up">TikTok</p> */}
             </Nav.Link>
             <Nav.Link
