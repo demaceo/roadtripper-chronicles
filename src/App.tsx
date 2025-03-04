@@ -3,7 +3,7 @@ import { HashRouter, useRoutes } from "react-router-dom";
 import Hero from "./components/Hero/Hero.tsx";
 import NavBar from "./components/NavBar/NavBar.tsx";
 // import About from "./components/About/About.tsx";
-import Footer from "./components/Footer/Footer.tsx";
+// import Footer from "./components/Footer/Footer.tsx";
 
 const App: React.FC = () => {
   const Routes = () => {
@@ -45,7 +45,7 @@ const App: React.FC = () => {
               cloudImage="http://demos.creative-tim.com/paper-kit-2/assets/img/clouds.png"
               fogImage="http://demos.creative-tim.com/paper-kit-2/assets/img/fog-low.png"
             />{" "}
-            <Footer />
+            {/* <Footer /> */}
           </>
         ),
       },

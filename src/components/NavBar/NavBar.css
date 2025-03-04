@@ -56,7 +56,7 @@
   }
 }
 
-.btn-round {
+/* .btn-round {
   background-color: #ffcc002d;
   outline: none;
   border: none;
@@ -68,7 +68,7 @@
   align-items: center;
   font-weight: bold;
   text-align: center;
-}
+} */
 
 #spotify-icon {
   color: #137c15;
@@ -91,4 +91,46 @@
 
 .nav-open {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  .car {
+    display: none;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.2em;
+  }
+
+  .navbar-logo {
+    font-size: 1.2em;
+  }
+
+  .btn-round {
+    font-size: 1em;
+  }
+
+  #spotify-icon {
+    font-size: 1.5em;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-toggler {
+    display: block;
+    background-color: #00ff1e;
+    /* color: red; */
+  }
+  #navbar-toggler.navbar-toggler-icon {
+    background-color: #ffcc00;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #navbar-toggler {
+    display: none;
+  }
 }
