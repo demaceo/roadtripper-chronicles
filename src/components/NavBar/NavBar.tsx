@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSpotify,
-  faLinkedin,
+  // faLinkedin,
   faInstagram,
   faTiktok,
   faYoutube,
@@ -75,15 +75,14 @@ const NavBar: React.FC = () => {
 
         <Navbar.Collapse id="navbarToggler">
           <Nav className="ms-auto">
-            <Nav.Link
+            {/* <Nav.Link
               href="https://www.linkedin.com/groups/13117416/"
               target="_blank"
               title="Connect with us on LinkedIn"
               data-bs-toggle="tooltip"
             >
               <FontAwesomeIcon icon={faLinkedin} />
-              {/* <p className="hidden-lg-up">LinkedIn</p> */}
-            </Nav.Link>
+            </Nav.Link> */}
 
             <Nav.Link
               href="https://www.instagram.com/roadtripperchronicles"
