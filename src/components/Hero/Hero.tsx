@@ -2,43 +2,40 @@ import React from "react";
 import "./Hero.css";
 import { Button } from "react-bootstrap";
 
-interface HeroProps {
-  title: string;
-  subtitle: string;
-  backgroundImage: string;
-  cloudImage: string;
-  fogImage: string;
-}
+const Hero: React.FC = () => {
+  const heroText = "ROADTRIPPER CHRONICLES";
+  const heroImg =
+    "https://cms.travelnoire.com/wp-content/uploads/2023/09/pexels-nicolas-postiglioni-1537979.jpg";
+  const cloudImg =
+    "http://demos.creative-tim.com/paper-kit-2/assets/img/clouds.png";
+  const fogImg =
+    "http://demos.creative-tim.com/paper-kit-2/assets/img/fog-low.png";
 
-const Hero: React.FC<HeroProps> = ({
-  title,
-  subtitle,
-  backgroundImage,
-  cloudImage,
-  fogImage,
-}) => {
   return (
     <div className="hero-wrapper">
       <div
         className="hero-background section-dark"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{
+          backgroundImage: `url(${heroImg})`,
+        }}
       >
         <div className="overlay-filter"></div>
         <div className="content-center">
           <div className="hero-title-container">
             <div className="title-brand">
-              <h1 className="hero-title">{title}</h1>
+              <h1 className="hero-title">{heroText}</h1>
               <div className="fog-low">
-                <img src={fogImage} alt="Fog" />
+                <img src={fogImg} alt="Fog" />
               </div>
               <div className="fog-low right">
-                <img src={fogImage} alt="Fog" />
+                <img src={fogImg} alt="Fog" />
               </div>
+              <h2 className="hero-subtitle">The Podcast</h2>
             </div>
-            <h2 className="hero-subtitle">{subtitle}</h2>
+
             <Button
               // variant="danger"
-              className="contact-btn-round"
+              className="contact-btn"
               href="mailto:hello@roadtripperchronicles.com"
               target="_blank"
             >
@@ -48,7 +45,9 @@ const Hero: React.FC<HeroProps> = ({
         </div>
         <div
           className="moving-clouds"
-          style={{ backgroundImage: `url(${cloudImage})` }}
+          style={{
+            backgroundImage: `url(${cloudImg})`,
+          }}
         ></div>
       </div>
     </div>
