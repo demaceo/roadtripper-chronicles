@@ -68,8 +68,8 @@ const NavBar: React.FC = () => {
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarToggler" onClick={toggleNavbar}>
-          <span className="navbar-toggler-bar"></span>
-          <span className="navbar-toggler-bar"></span>
+          {/* <span className="navbar-toggler-bar"></span> */}
+          {/* <span className="navbar-toggler-bar"></span> */}
           <span className="navbar-toggler-bar"></span>
         </Navbar.Toggle>
 
