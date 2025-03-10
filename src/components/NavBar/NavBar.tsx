@@ -52,7 +52,7 @@ const NavBar: React.FC = () => {
       <Container className="nav-links-container">
         <Navbar.Brand
           className="navbar-logo"
-          href="http://www.roadtripperchronicles.com"
+          href="https://www.roadtripperchronicles.com"
         >
           {/* LOGO */}
           <div className={`car ${carStopped ? "car-stopped" : ""}`}>
@@ -113,7 +113,7 @@ const NavBar: React.FC = () => {
               {/* <p className="hidden-lg-up">TikTok</p> */}
             </Nav.Link>
             <Nav.Link
-              href="https://open.spotify.com/show/53JJiTRGinHdvf48OVeN5b?si=Di1XLA-HTmyNIHJAleCS3w"
+              href="https://open.spotify.com/show/53JJiTRGinHdvf48OVeN5b?si=1f30e55557e04d3a"
               target="_blank"
               title="Listen to us on Spotify"
               data-bs-toggle="tooltip"
