@@ -18,19 +18,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-size: 100%; */
-  /* background-repeat: no-repeat; */
-  /* background-position: center top; */
-  /* animation: zoom 5s forwards; */
 }
-/* @keyframes zoom {
-  0% {
-    background-size: 100%;
-  }
-  100% {
-    background-size: 105%;
-  }
-} */
+
 
 .section-dark {
   color: #0b1011;
@@ -81,7 +70,7 @@
   animation: fadeInText 2s ease-in forwards;
 }
 
-.hero-subtitle {
+/* .hero-subtitle {
   font-size: 1.6em;
   letter-spacing: 2px;
   text-transform: lowercase;
@@ -89,7 +78,20 @@
   font-weight: 200;
   text-shadow: 0px 10px rgba(0, 0, 0, 0.15);
   animation: fadeInText 4s ease-in forwards;
+} */
+
+.hero-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3em;
+  /* font-weight:100; */
+  color: #ffffffde;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.35);
+  animation: fadeInText 4s ease-in forwards;
+  margin-top: 0.5em;
 }
+
 
 .revealed {
   transition: opacity 0.5s ease-in-out;

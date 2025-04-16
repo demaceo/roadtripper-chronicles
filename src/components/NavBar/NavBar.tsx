@@ -68,22 +68,11 @@ const NavBar: React.FC = () => {
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarToggler" onClick={toggleNavbar}>
-          {/* <span className="navbar-toggler-bar"></span> */}
-          {/* <span className="navbar-toggler-bar"></span> */}
           <span className="navbar-toggler-bar"></span>
         </Navbar.Toggle>
 
         <Navbar.Collapse id="navbarToggler">
           <Nav className="ms-auto">
-            {/* <Nav.Link
-              href="https://www.linkedin.com/groups/13117416/"
-              target="_blank"
-              title="Connect with us on LinkedIn"
-              data-bs-toggle="tooltip"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </Nav.Link> */}
-
             <Nav.Link
               href="https://www.instagram.com/roadtripperchronicles"
               target="_blank"
@@ -101,7 +90,6 @@ const NavBar: React.FC = () => {
               data-bs-toggle="tooltip"
             >
               <FontAwesomeIcon id="tiktok-icon" icon={faTiktok} />
-              {/* <p className="hidden-lg-up">TikTok</p> */}
             </Nav.Link>
             <Nav.Link
               href="https://www.youtube.com/@roadtripperchronicles"
@@ -110,7 +98,6 @@ const NavBar: React.FC = () => {
               data-bs-toggle="tooltip"
             >
               <FontAwesomeIcon id="youtube-icon" icon={faYoutube} />
-              {/* <p className="hidden-lg-up">TikTok</p> */}
             </Nav.Link>
             <Nav.Link
               href="https://open.spotify.com/show/53JJiTRGinHdvf48OVeN5b?si=1f30e55557e04d3a"
@@ -119,17 +106,7 @@ const NavBar: React.FC = () => {
               data-bs-toggle="tooltip"
             >
               <FontAwesomeIcon id="spotify-icon" icon={faSpotify} />
-              {/* <p className="hidden-lg-up">Spotify</p> */}
             </Nav.Link>
-
-            {/* <Button
-              variant="danger"
-              className="btn-round"
-              href="http://www.roadtripperchronicles.com"
-              target="_blank"
-            >
-              
-            </Button> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
