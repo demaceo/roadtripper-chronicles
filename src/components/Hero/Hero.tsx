@@ -35,13 +35,14 @@ const Hero: React.FC = () => {
             </div>
 
             <Button
-              // variant="danger"
               className="contact-btn"
               href="mailto:hello@roadtripperchronicles.com"
               target="_blank"
             >
-              <FaEnvelopeOpenText style={{ marginRight: "0.5em" }} />
-              let's chat
+              <span className="btn-icon-text">
+                <FaEnvelopeOpenText className="icon" />
+                LET’S CHAT
+              </span>
             </Button>
           </div>
         </div>
