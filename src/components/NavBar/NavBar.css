@@ -56,26 +56,47 @@
   }
 }
 
-/* .btn-round {
-  background-color: #ffcc002d;
-  outline: none;
-  border: none;
-  color: #ffcc00;
-  padding: 0.5em;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  text-align: center;
-} */
+#instagram-icon {
+  color: #e1306c; /* Instagram pink */
+  /* font-size: 2em; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-shadow: 0 0 5px #e1306c66;
+}
+
+#instagram-icon:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #e1306caa;
+}
+
+#tiktok-icon {
+  color: #25f4ee; /* TikTok blue */
+  /* font-size: 2em; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-shadow: 0 0 5px #25f4ee99;
+}
+
+#tiktok-icon:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #25f4eecc;
+}
+
+#youtube-icon {
+  color: #ff0000; /* YouTube red */
+  /* font-size: 2em; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-shadow: 0 0 5px #ff000066;
+}
+
+#youtube-icon:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #ff0000aa;
+}
 
 #spotify-icon {
   color: #137c15;
-  font-size: 2em;
+  font-size: 1.5em;
   opacity: 1;
   border-radius: 50%;
-  /* box-shadow: 0px 0px 5px #05f605; */
   box-shadow: 0px 0px 5px #05f605, 0px 0px 5px #05f605, 0px 0px 5px #05f605;
   animation: glow 1.5s infinite alternate;
 }

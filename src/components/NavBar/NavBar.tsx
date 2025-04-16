@@ -90,7 +90,7 @@ const NavBar: React.FC = () => {
               title="Follow us on Instagram"
               data-bs-toggle="tooltip"
             >
-              <FontAwesomeIcon icon={faInstagram} />
+              <FontAwesomeIcon id="instagram-icon" icon={faInstagram} />
               {/* <p className="hidden-lg-up">Instagram</p> */}
             </Nav.Link>
 
@@ -100,7 +100,7 @@ const NavBar: React.FC = () => {
               title="Follow us on TikTok"
               data-bs-toggle="tooltip"
             >
-              <FontAwesomeIcon icon={faTiktok} />
+              <FontAwesomeIcon id="tiktok-icon" icon={faTiktok} />
               {/* <p className="hidden-lg-up">TikTok</p> */}
             </Nav.Link>
             <Nav.Link
@@ -109,7 +109,7 @@ const NavBar: React.FC = () => {
               title="Subcribe to our Youtube Channel"
               data-bs-toggle="tooltip"
             >
-              <FontAwesomeIcon icon={faYoutube} />
+              <FontAwesomeIcon id="youtube-icon" icon={faYoutube} />
               {/* <p className="hidden-lg-up">TikTok</p> */}
             </Nav.Link>
             <Nav.Link
