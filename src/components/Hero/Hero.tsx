@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import { Button } from "react-bootstrap";
+import { FaEnvelopeOpenText } from "react-icons/fa";
 
 const Hero: React.FC = () => {
   const heroText = "ROADTRIPPER CHRONICLES";
@@ -39,6 +40,7 @@ const Hero: React.FC = () => {
               href="mailto:hello@roadtripperchronicles.com"
               target="_blank"
             >
+              <FaEnvelopeOpenText style={{ marginRight: "0.5em" }} />
               let's chat
             </Button>
           </div>
