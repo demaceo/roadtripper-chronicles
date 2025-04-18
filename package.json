@@ -17,6 +17,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@vercel/analytics": "^1.5.0",
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.7",
     "openssl": "^2.0.0",
