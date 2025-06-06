@@ -3,7 +3,9 @@ import { HashRouter, useRoutes } from "react-router-dom";
 import Hero from "./components/Hero/Hero.tsx";
 import NavBar from "./components/NavBar/NavBar.tsx";
 // import About from "./components/About/About.tsx";
-// import Footer from "./components/Footer/Footer.tsx";
+import Footer from "./components/Footer/Footer.tsx";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy.tsx";
+import TermsOfService from "./components/TermsOfService/TermsOfService.tsx";
 // import Vinyl from "./components/Records/Vinyl/Vinyl.tsx";
 // import WoodVinyl from "./components/Records/WoodVinyl/WoodVinyl.tsx";
 
@@ -18,7 +20,27 @@ const App: React.FC = () => {
             <Hero />
             {/* <Vinyl /> */}
             {/* <WoodVinyl /> */}
-            {/* <Footer /> */}
+            <Footer />
+          </>
+        ),
+      },
+      {
+        path: "/privacy-policy",
+        element: (
+          <>
+            <NavBar />
+            <PrivacyPolicy />
+            <Footer />
+          </>
+        ),
+      },
+      {
+        path: "/terms-of-service",
+        element: (
+          <>
+            <NavBar />
+            <TermsOfService />
+            <Footer />
           </>
         ),
       },
@@ -27,7 +49,8 @@ const App: React.FC = () => {
         element: (
           <>
             <NavBar />
-            <Hero /> {/* <Footer /> */}
+            <Hero />
+            <Footer />
           </>
         ),
       },
