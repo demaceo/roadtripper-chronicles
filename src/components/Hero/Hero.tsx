@@ -1,6 +1,5 @@
 import React from "react";
 import "./Hero.css";
-import { Button } from "react-bootstrap";
 import { FaEnvelopeOpenText } from "react-icons/fa";
 
 const Hero: React.FC = () => {
@@ -34,16 +33,17 @@ const Hero: React.FC = () => {
               <h2 className="hero-subtitle">The Podcast</h2>
             </div>
 
-            <Button
+            <button
               className="contact-btn"
-              href="mailto:hello@roadtripperchronicles.com"
-              target="_blank"
+              onClick={() =>
+                window.open("mailto:hello@roadtripperchronicles.com")
+              }
             >
               <span className="btn-icon-text">
                 <FaEnvelopeOpenText className="icon" />
                 LET’S CHAT
               </span>
-            </Button>
+            </button>
           </div>
         </div>
         <div
