@@ -80,7 +80,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   text-shadow: 2px 2px 0px #000, 4px 4px 8px rgba(244, 244, 244, 0.8);
-  background: linear-gradient(135deg, #ffcc00 0%, #ff8c00 100%);
+  /* background: linear-gradient(135deg, #ffcc00 0%, #ff8c00 100%); */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -98,7 +98,7 @@
   transform: translateX(-50%);
   width: 60%;
   height: calc(100% + 20px);
-  background: linear-gradient(
+  /* background: linear-gradient(
       45deg,
       transparent 15px,
       #2c5530 15px,
@@ -106,11 +106,11 @@
       transparent calc(100% - 15px)
     ),
     #1a4d1f;
-  border: 3px solid #ffcc00;
+  border: 3px solid #ffcc00; */
   border-radius: 8px;
   z-index: -1;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5),
-    inset 0 2px 4px rgba(255, 204, 0, 0.3);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5),
+    inset 0 2px 4px rgba(255, 204, 0, 0.3); */
 }
 
 /* !Option 2: Retro License Plate Style */
